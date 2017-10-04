@@ -1,0 +1,64 @@
+/*
+<!-- Desciption: COS10020 Assignment2 - Form Style Sheet -->
+<!-- Author: Lucas Moore -->
+<!-- Date: 29/08/17 -->
+<!-- Validated: 05/09/17 - 1 Error -->
+*/
+
+form{
+	text-align: center; /* Aligns all elements in form to the centre */
+}
+
+.ErrorTip{
+	color: red; /* Error mesages will be red for extra visiblity */
+}
+
+.default{
+	color: lightgrey;
+}
+
+input[type='number'] { /* Removes Arrows from number input fields in Firefox*/
+    -moz-appearance:textfield;
+}
+
+.no-spin::-webkit-inner-spin-button, .no-spin::-webkit-outer-spin-button { /* Removes Arrows from number input fields in Chrome*/
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Style the tooltip box */
+.tooltip {
+	display: none;
+	position: relative;
+	background: #B42929;
+	border: 2px solid #f5f5f5;
+	padding: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	left: 1em;
+	color: #F2F2F2;
+}
+
+.tooltip:after, .tooltip:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tooltip:after {
+	border-color: rgba(166, 69, 58, 0);
+	border-right-color: #B42929;
+	border-width: 15px;
+	margin-top: -15px;
+}
+.tooltip:before {
+	border-color: rgba(245, 245, 245, 0);
+	border-right-color: #f5f5f5;
+	border-width: 13px;
+	margin-top: -13px;
+}
